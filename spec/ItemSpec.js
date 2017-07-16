@@ -1,11 +1,9 @@
-var Item = require('../src/Item.js')
+var Item = require('../src/Vendor.js').Item
 
 describe("Item", () => {
 
   beforeEach(() => {
-    item = new Item();
-    item.name = "pepsi"
-    item.price = 0.50
+    item = new Item("pepsi", 0.50);
   })
 
   describe("Item has properties", () => {
