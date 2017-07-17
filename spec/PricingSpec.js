@@ -11,4 +11,13 @@ describe("Pricing system", () => {
       expect(pricingSystem.balance).toEqual(0)
     })
   })
+
+  describe("#Sum", () => {
+    it("adds two arguments to produce a balance", () => {
+      let itemPrice = 0.50
+      let quantity = 2
+      pricingSystem.sum(itemPrice, quantity)
+      expect(pricingSystem.balance).toEqual(1)
+    })
+  })
 })
